@@ -9,6 +9,7 @@ This blog explains the API basics required before learning SAP CPI.
 - REST
 - SOAP
 - OData
+- HTTP
 
 ## Why APIs Matter in SAP CPI
 
