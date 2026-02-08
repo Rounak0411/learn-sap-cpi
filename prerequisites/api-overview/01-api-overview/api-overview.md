@@ -86,7 +86,7 @@ Broadly, APIs can be grouped into two main categories:
 
 ---
 
-## API Protocols
+### API Protocols
 
 API protocols define **how data is transmitted** between applications.  
 They focus on communication rules, message formats, and transport mechanisms.
@@ -104,7 +104,7 @@ Common API protocols include:
 
 ---
 
-## API Architectural Styles
+### API Architectural Styles
 
 API architectural styles define **how APIs are designed and structured**.  
 They focus on how requests and responses are organized and how operations are performed.
@@ -119,7 +119,7 @@ Common API styles include:
 
 ---
 
-## Important Note
+### Important Note
 
 - REST APIs usually use **HTTP or HTTPS protocols** for communication.
 
