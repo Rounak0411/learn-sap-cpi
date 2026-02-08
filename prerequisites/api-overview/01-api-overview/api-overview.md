@@ -121,9 +121,11 @@ Common API styles include:
 
 ## Important Note
 
-REST APIs usually **use HTTP or HTTPS protocols** for communication.  
-SOAP APIs come with their **own protocol and strict message structure**.  
-OData APIs are built on **HTTP and REST principles**, with additional standards for querying data.
+- REST APIs usually use **HTTP or HTTPS protocols** for communication.
+
+- SOAP APIs come with their **own protocol** and follow a **strict message structure** using XML.
+
+- OData APIs are built on **HTTP and REST principles**, with additional standards that allow advanced data querying and filtering.
 
 ---
 
