@@ -76,15 +76,60 @@ Here are some reasons why APIs are considered the hero:
 
 ## Types of APIs
 
-APIs can be categorized based on the communication standards and architectural styles they follow. These types define how applications send requests, exchange data, and receive responses.
+APIs can be classified in different ways based on **how they communicate** and **how they are designed**.  
+Understanding this classification helps avoid confusion and makes it easier to choose the right API approach while building integrations.
 
-Different API types follow different communication approaches, message formats, and design patterns.
+Broadly, APIs can be grouped into two main categories:
 
-Some of the commonly used API types include:
+1. API Protocols
+2. API Architectural Styles
 
-- HTTP / HTTPS APIs – These APIs use web communication protocols to transfer data between applications.
-- REST APIs – These APIs follow REST architecture and are widely used for lightweight and flexible communication.
-- SOAP APIs – These APIs use structured XML messaging and are commonly used in enterprise integrations.
-- OData APIs – These APIs are used for standardized data access and are widely used in SAP and enterprise systems.
+---
 
-Each API type is designed to support specific integration needs, security requirements, and data exchange methods.
+## API Protocols
+
+API protocols define **how data is transmitted** between applications.  
+They focus on communication rules, message formats, and transport mechanisms.
+
+Common API protocols include:
+
+- **HTTP / HTTPS**  
+  Used for web-based communication and data exchange between systems.
+
+- **SOAP**  
+  A protocol that uses structured XML messages and strict communication standards.
+
+- **OData**  
+  A standardized protocol built on HTTP that is widely used in enterprise and SAP systems for data access.
+
+---
+
+## API Architectural Styles
+
+API architectural styles define **how APIs are designed and structured**.  
+They focus on how requests and responses are organized and how operations are performed.
+
+Common API styles include:
+
+- **REST (Representational State Transfer)**  
+  A lightweight and widely used architectural style that works on top of HTTP.
+
+- **GraphQL**  
+  A flexible query-based API style that allows clients to request exactly the data they need.
+
+---
+
+## Important Note
+
+REST APIs usually **use HTTP or HTTPS protocols** for communication.  
+SOAP APIs come with their **own protocol and strict message structure**.  
+OData APIs are built on **HTTP and REST principles**, with additional standards for querying data.
+
+---
+
+### In a Nutshell
+
+- **Protocols** define _how communication happens_.
+- **Architectural styles** define _how APIs are designed_.
+
+Both are important to understand when working with APIs and integration platforms like SAP CPI.
