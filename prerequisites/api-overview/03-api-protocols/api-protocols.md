@@ -93,11 +93,79 @@ Each of these protocols follows different communication rules and is designed to
 
 HTTP (Hypertext Transfer Protocol) and HTTPS (Secure HTTP) are the most widely used communication protocols for APIs.
 
-They define how requests and responses are exchanged between client applications and servers.
+There are four main parts in an HTTP message:
 
-HTTPS adds encryption and security to HTTP communication.
+![alt text](image-2.png)
 
 ---
+
+#### HTTP Start Line
+
+Both Request and Response messages contain an HTTP version.
+
+In the **Request Start Line**, it includes the HTTP method (such as GET, POST, DELETE, etc.).  
+However, in the **Response Start Line**, there is no method.
+
+The Request Start Line also contains the API program location (resource path) and parameters.  
+The Request Start Line does not contain a status code, whereas the Response Start Line contains a status code (for example: 200 OK).
+
+##### Format Structure
+
+- Request Format → Method + Space + API Program Folder Location + Parameters + Space + HTTP Version
+- Response Format → HTTP Version + Space + Status Code
+
+| Element                      | Request Start Line | Response Start Line |
+| ---------------------------- | ------------------ | ------------------- |
+| HTTP Version                 | Present            | Present             |
+| Method                       | Present            | Not Present         |
+| API Location / Resource Path | Present            | Not Present         |
+| Parameters                   | Present            | Not Present         |
+| Status Code                  | Not Present        | Present             |
+
+##### Example
+
+Request → `GET /search?q=SAP CPI HTTP/1.1`  
+Response → `HTTP/1.1 200 OK`
+
+---
+
+#### HTTP Headers
+
+HTTP headers contain additional information about the request or response.
+
+They help the client and server understand how the message should be processed, what type of data is being sent, and how the communication should be handled.
+
+In a request, headers may include details such as authorization information, content type, and accepted response formats.
+
+In a response, headers provide information about the server, response format, caching rules, and other metadata.
+
+Headers act like instructions that guide how the communication happens between systems.
+
+---
+
+#### HTTP Blank Line
+
+After the headers, there is always a blank line.
+
+This blank line is important because it separates the headers from the body of the message.
+
+It tells the system that the header section has ended and the actual data content starts next.
+
+Without this separation, the message structure would not be correctly understood.
+
+---
+
+#### HTTP Body
+
+The HTTP body contains the actual data being sent between the client and server.
+
+In a request, the body usually carries data when we send information to the server, such as form data, JSON payload, or XML data.
+
+In a response, the body contains the result returned by the server, such as data records, files, or messages.
+ß
+Not all requests contain a body. For example, GET requests often do not have a body, while POST or PUT requests usually include one.
+
+The body is the main content part of the HTTP message where the actual information exchange happens.
 
 ### SOAP
 
