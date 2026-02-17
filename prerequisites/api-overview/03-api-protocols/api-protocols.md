@@ -95,7 +95,7 @@ HTTP (Hypertext Transfer Protocol) and HTTPS (Secure HTTP) are the most widely u
 
 There are four main parts in an HTTP message:
 
-![alt text](image-2.png)
+![HTTP Message Structure](image.png)
 
 ---
 
@@ -166,6 +166,8 @@ In a response, the body contains the result returned by the server, such as data
 Not all requests contain a body. For example, GET requests often do not have a body, while POST or PUT requests usually include one.
 
 The body is the main content part of the HTTP message where the actual information exchange happens.
+
+---
 
 ### SOAP
 
