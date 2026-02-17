@@ -95,7 +95,7 @@ HTTP (Hypertext Transfer Protocol) and HTTPS (Secure HTTP) are the most widely u
 
 There are four main parts in an HTTP message:
 
-<img src="../../assets/http-message-structure.png" width="350">
+<img src="../../assets/http-message-structure.png" width="500">
 
 ---
 
